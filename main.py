@@ -21,3 +21,13 @@ def merge_ranges(meetings):
             merged_meetings.append((current_meeting_start, current_meeting_end))
 
     return merged_meetings
+
+
+def reverse(list_of_chars):
+
+    # Reverse the input list of chars in place
+    for i in range(len(list_of_chars)//2):
+        list_of_chars[i], list_of_chars[len(list_of_chars)-1-i] = list_of_chars[len(list_of_chars)-1-i], list_of_chars[i]
+
+
+    return list_of_chars
